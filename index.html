@@ -34,6 +34,15 @@
 }
 </style>
 
+<!-- React CDN -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<!-- SwiperJS CSS + JS -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+
   <!-- =======================================================
   * Template Name: EasyFolio
   * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
@@ -363,24 +372,20 @@
 
           <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
             <ul class="portfolio-filters isotope-filters">
-              <li data-filter="*" class="filter-active">All Work</li>
-              <li data-filter=".filter-web">Web Design</li>
-              <li data-filter=".filter-graphics">Graphics</li>
-              <li data-filter=".filter-motion">Motion</li>
-              <li data-filter=".filter-brand">Branding</li>
+              <li data-filter="*" class="filter-active">Recent Projects</li>
             </ul>
           </div>
 
           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
             <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
+              <div class="portfolio-card" onclick="window.location.href='portfolioitem.html'">
                 <div class="portfolio-image">
                   <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      <a href="portfolioitem.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
                 </div>
@@ -399,7 +404,7 @@
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
                       <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      <a href="portfolioitem.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
                     </div>
                   </div>
                 </div>
@@ -407,82 +412,6 @@
                   <span class="category">Graphics</span>
                   <h3>Creative Brand Identity</h3>
                   <p>Vestibulum id ligula porta felis euismod semper at vulputate.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Motion</span>
-                  <h3>Product Animation Reel</h3>
-                  <p>Donec ullamcorper nulla non metus auctor fringilla dapibus.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Branding</span>
-                  <h3>Luxury Brand Package</h3>
-                  <p>Aenean lacinia bibendum nulla sed consectetur elit.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Web Design</span>
-                  <h3>E-commerce Platform</h3>
-                  <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
-                      <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Graphics</span>
-                  <h3>Digital Art Collection</h3>
-                  <p>Cras mattis consectetur purus sit amet fermentum.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -510,180 +439,10 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="testimonials-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config"> 
-            {
-              "slidesPerView": 1,
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              }
-            }
-          </script>
-
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2>PHP Developer & Sys Admin</h2>
-                    <p>
-                      Hired as a PHP/WordPress expert to develop scripts, optimize servers (cPanel/SSH), and configure OptimizePress-based sites. Delivered high-performance solutions while ensuring seamless bilingual (EN/ES) collaboration. Completed paid training and transitioned into ongoing maintenance.
-                    </p>
-                     <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Thanks Mark for helping us with your knowledge in PHP developing.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p></p>
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/clients/mariano.png" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Mariano Cordoba</h3>
-                        <span>iLatinMedia | Argentina</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <!-- <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Testimonial Item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2>PHP Developer for Site Maintenance & Modifications </h2>
-                    <p>
-                      Optimized client's PHP infrastructure, resolving critical issues while meeting rigid scheduling demands. Demonstrated independent contractor reliability with perfect English documentation.
-                    </p>
-                     <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Mark is a very talented programmer. I was able to solve problem at my portal and show 'out of the box' thinking while do so. Is also very pleasant and trustworthy.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p></p>
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/clients/israel.svg" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Asaf Shani</h3>
-                        <span>Jadeya Ananim | Israel</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <!-- <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Testimonial Item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2>Church Website Development Project</h2>
-                    <p>
-                      Built 9-page church website from provided designs using PHP/HTML/CSS/JS. Delivered on time, paving way for long-term collaboration with project manager.
-                    </p>
-                     <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Mark did a fast, excellent job for us. He was excellent at communicating and making sure he met the project requirements and expectations. I highly recommend him.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p></p>
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/clients/jordan.jfif" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Jordan Dalton</h3>
-                        <span>LaraHire | USA</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <!-- <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Testimonial Item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2>Logo Design & Optimization Project</h2>
-                    <p>
-                     Precisely modified client logo with customized text ('Naturally Visible' + 'Search Engine Optimization') and converted to transparent PNG for web use, following specific project requirements.
-                    </p>
-                     <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Mark is an absolute professional. His turnaround rate was amazingly fast, his communication was instant, and he was very easy to work with. I would definitely recommend him and will hire again for future projects. Thanks Mark</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <p></p>
-                    <div class="profile d-flex align-items-center">
-                      <img src="assets/img/clients/nathan.jfif" class="profile-img" alt="">
-                      <div class="profile-info">
-                        <h3>Nathan Gutierrez</h3>
-                        <span>Pristine Vision Studios | USA</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <!-- <div class="featured-img-wrapper">
-                      <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Testimonial Item -->
+        <div id="testimonial-slider-root"></div>
 
 
-            
-
-          </div>
-
-          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-
-        </div>
+        
 
       </div>
 
@@ -794,6 +553,71 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/babel">
+  const { useState, useEffect, useRef } = React;
+
+  function TestimonialSlider() {
+    const swiperRef = useRef(null);
+
+    const [testimonials, setTestimonials] = useState([]);
+
+      useEffect(() => {
+        fetch('testimonials.json')
+          .then(response => response.json())
+          .then(data => setTestimonials(data))
+          .catch(err => console.error('Error loading testimonials:', err));
+      }, []);
+
+    useEffect(() => {
+      swiperRef.current = new Swiper('.swiper', {
+        slidesPerView: 1,
+        loop: true,
+        speed: 600,
+        autoplay: {
+          delay: 5000
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    }, [testimonials]);
+     // Add loading state
+    if (testimonials.length === 0) {
+        return <div>Loading testimonials...</div>;
+    }
+
+    return (
+      <div className="swiper">
+        <div className="swiper-wrapper">
+          {testimonials.map((t, i) => (
+            <div className="swiper-slide" key={i}>
+              <div className="testimonial-item">
+                <h2>{t.title}</h2>
+                <p>{t.text1}</p>
+                <p>{t.text2}</p>
+                <div className="profile d-flex align-items-center">
+                  <img src={t.image} className="profile-img" alt={t.name} />
+                  <div className="profile-info">
+                    <h3>{t.name}</h3>
+                    <span>{t.role}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
+        </div>
+      </div>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('testimonial-slider-root')).render(<TestimonialSlider />);
+</script>
 
 </body>
 

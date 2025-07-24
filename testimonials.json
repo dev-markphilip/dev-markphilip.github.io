@@ -1,0 +1,59 @@
+[
+    {
+      "title": "PHP Developer & Sys Admin",
+      "text1": "Hired as a PHP/WordPress expert to develop scripts, optimize servers (cPanel/SSH), and configure OptimizePress-based sites. Delivered high-performance solutions while ensuring seamless bilingual (EN/ES) collaboration. Completed paid training and transitioned into ongoing maintenance.",
+      "text2": "Thanks Mark for helping us with your knowledge in PHP developing.",
+      "name": "Mariano Cordoba",
+      "role": "iLatinMedia | Argentina",
+      "image": "assets/img/clients/mariano.png"
+    },
+    {
+      "title": "PHP Developer for Site Maintenance & Modifications",
+      "text1": "Optimized client's PHP infrastructure, resolving critical issues while meeting rigid scheduling demands. Demonstrated independent contractor reliability with perfect English documentation.",
+      "text2": "Mark is a very talented programmer. I was able to solve problem at my portal and show 'out of the box' thinking while do so. Is also very pleasant and trustworthy.",
+      "name": "Asaf Shani",
+      "role": "Jadeya Ananim | Israel",
+      "image": "assets/img/clients/israel.svg"
+    },
+    {
+      "title": "Church Website Development Project",
+      "text1": "Built 9-page church website from provided designs using PHP/HTML/CSS/JS. Delivered on time, paving way for long-term collaboration with project manager.",
+      "text2": "Mark did a fast, excellent job for us. He was excellent at communicating and making sure he met the project requirements and expectations. I highly recommend him.",
+      "name": "Jordan Dalton",
+      "role": "LaraHire | USA",
+      "image": "assets/img/clients/jordan.jfif"
+    },
+    {
+      "title": "Logo Design & Optimization Project",
+      "text1": "Precisely modified client logo with customized text ('Naturally Visible' + 'Search Engine Optimization') and converted to transparent PNG for web use, following specific project requirements.",
+      "text2": "Mark is an absolute professional. His turnaround rate was amazingly fast, his communication was instant, and he was very easy to work with. I would definitely recommend him and will hire again for future projects. Thanks Mark",
+      "name": "Nathan Gutierrez",
+      "role": "Pristine Vision Studios | USA",
+      "image": "assets/img/clients/nathan.jfif"
+    },
+    {
+      "title": "Custom PHP Development for PhotoStore Script",
+      "text1": "Upgraded PhotoStore script's media workflow with custom database fields, admin controls, and conditional displays. Delivered error-free implementation via staging environment, securing long-term maintenance partnership.",
+      "text2": "Mark is very patient, considerate, transparent and he keeps his promises I strongly recommend him for any programming task",
+      "name": "Amr Mashlah",
+      "role": "A M | UK",
+      "image": "assets/img/clients/amr.webp"
+    },
+    {
+      "title": "Database Review",
+      "text1": "Reviewed existing database structure and made sure their website is bug-free",
+      "text2": "Mark did an amazing job reviewing our database structure. Made excellent recommendations and I will be hiring him again soon to implement these recommendations. Thanks Mark!",
+      "name": "Garry Wordsworth",
+      "role": "Advise ITS | Australia",
+      "image": "assets/img/clients/person.webp"
+    },
+    {
+      "title": "Single-Page Lead Generation Website",
+      "text1": "Developed responsive one-page lead gen site from PDF mockups with email collection functionality. Delivered rapid deployment (within 48 hours) while maintaining design fidelity, securing future projects with client.",
+      "text2": "Great working with Mark. Already planning to work with him again in future.",
+      "name": "Ned Vaught",
+      "role": "Companee Ltd.| UK",
+      "image": "assets/img/clients/ned.jfif"
+    }
+    
+  ]
