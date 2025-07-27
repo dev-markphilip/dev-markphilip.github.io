@@ -1958,3 +1958,17 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.tech-tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: hsl(29, 54%, 58%);
+  color: #333;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 3px 5px 0 0;
+  border-radius: 12px;
+}
