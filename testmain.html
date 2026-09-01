@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Roster | Section Name</title>
+    <!-- Pico.css Minimalist CDN -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <style>
+        body { padding: 2rem 0; }
+        .student-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <hgroup>
+                <h1>Classroom Landing Page</h1>
+                <p>Welcome to our section repository. Click on a student below to view their profile.</p>
+            </hgroup>
+        </header>
+
+        <section>
+            <h2>Student Directory</h2>
+            <div class="student-grid">
+                
+                <!-- EXAMPLE STUDENT (Students will duplicate this block) -->
+                <article>
+                    <h3>John Doe</h3>
+                    <p>Computer Science Student</p>
+                    <a href="students/john-doe.html" class="outline" role="button">View Profile &rarr;</a>
+                </article>
+                
+                <!-- NEXT_STUDENT_MARKER (Students add their cards below this line) -->
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
